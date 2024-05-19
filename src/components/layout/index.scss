@@ -1,0 +1,82 @@
+.app {
+    position: relative;
+    will-change: contents;
+    transform-style: preserve-3d;
+    font-family: "Tomorrow";
+    color: #000;
+    animation: fadeIn 2s forwards;
+
+    .home-page,
+    .services-page,
+    .single-service,
+    .resorces-page,
+    .about-page,
+    .contact-page,
+    .policy-page {
+
+        h1 {
+            font-size: 40px;
+        }
+
+        h2 {
+            margin: 0;
+        }
+
+        p {
+            font-size: 18px;
+            font-family: "Roboto";
+            min-width: fit-content;
+            font-weight: 500;
+            padding: 0;
+        }
+    }
+
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 15rem;
+    right: 0;
+    font-size: 28px;
+    padding: 10px;
+    margin: 0;
+    background: var(--oposite);
+    border-radius: 20% 0% 0% 20%;
+    width: 50px;
+    height: 50px;
+    border: none;
+    box-shadow: var(--button-shadow);
+    cursor: pointer;
+    animation: fadeInRight 2s;
+    transition: all 1s;
+
+    &:hover {
+        background: #636363;
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .app {
+        background-image: none;
+
+        .home-page,
+        .about-page,
+        .serivces-page,
+        .single-service,
+        .policy-page {
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+button {
+    text-transform: capitalize;
+    letter-spacing: 4px;
+    font-family: "Tomorrow";
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    width: 200px;
+    padding: 1rem;
+    border-radius: 5px;
+    border: none;
+    box-shadow: var(--button-shadow);
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-2px);
+        background: var(--primary);
+    }
+
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 920px) {
+    button {
+        width: 150px;
+        font-size: 10px;
+        margin: 0;
+    }
+}

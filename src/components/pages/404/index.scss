@@ -1,0 +1,20 @@
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    margin: 0em;
+
+
+    h1 {
+        color: red;
+        font-family: "Tomorrow";
+        padding-top: 1rem;
+    }
+
+    img {
+        margin-top: 2rem;
+        width: 450px;
+    }
+}

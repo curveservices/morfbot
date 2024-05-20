@@ -83,7 +83,7 @@ const Contact = () => {
                     </MapContainer>
                 </div>
             </div>
-            <Loader type="ball-spin-fade-loader" color="black" />
+            <Loader type="ball-spin-fade-loader" color="white" />
         </>
     );
 }

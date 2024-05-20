@@ -1,0 +1,99 @@
+.about-page {
+    .hero {
+        display: flex;
+        width: 100%;
+        background-image: url("../../../assets/images/hero.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: var(--button);
+        ;
+
+        .inner-hero {
+            margin-bottom: 2rem;
+
+            .textbox {
+                margin: 2em 4rem;
+
+                span {
+                    font-weight: 700;
+                }
+
+                .about {
+                    margin-left: 2rem;
+                    max-width: 60%;
+                    animation: fadeInLeft 1s forwards;
+                }
+
+                .second-text {
+                    display: flex;
+                    justify-content: space-around;
+                    margin: 4rem 0;
+                    animation: fadeInUp 1s forwards;
+
+                    .info {
+                        max-width: 600px;
+                        padding: 1rem;
+                        border-radius: 10px;
+                        background: var(--opposite);
+                        color: #000;
+
+                        h2 {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .second-section {
+        background: var(--button);
+        padding: 1rem;
+        margin-bottom: 4rem;
+
+        .inner-second {
+            .textbox {
+                text-align: center;
+                
+                .card-container {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 2rem;
+                    gap: 50px;
+
+                    .card {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        width: 300px;
+                        gap: 20px;
+                        padding: 1rem;
+                    }
+
+                    .icon {
+                        font-size: 4rem;
+                        width: 75px;
+                        background: var(--opposite);
+                        border-radius: 50%;
+                    }
+                }
+            }
+            .secondAnim {
+                animation: fadeIn 2s forwards;
+            }
+
+            .leftAnim {
+                animation: slideInLeft 2s forwards;
+            }
+
+            .rightAnim {
+                animation: slideInRight 2s forwards;
+            }
+
+            .none {
+                opacity: 0;
+            }
+        }
+    }
+}

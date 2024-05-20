@@ -1,0 +1,69 @@
+.home-page {
+    .hero {
+        height: 100vh;
+        width: 100%;
+        background-image: url("../../../assets/images/hero.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: var(--button);
+
+        .logo {
+            width: 450px;
+            height: 150px;
+            padding: 0rem;
+            margin: 2rem 5rem;
+            animation: zoomIn 2s forwards;
+        }
+    }
+
+    .textbox {
+        display: flex;
+        flex-direction: column;
+
+        .hero-title {
+            margin: 0 0 0 2.5rem;
+            font-size: 70px;
+            max-width: 70%;
+            text-align: end;
+            animation: fadeInLeft 2s forwards;
+        }
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: flex-end;
+        gap: 50px;
+        padding: 3rem;
+        max-width: 50%;
+        animation: fadeIn 2s forwards;
+    }
+
+    .second-section {
+        margin: 3rem 0;
+        background: var(--button);
+
+        .second-inner {
+            .textbox {
+                margin: 0rem 3rem;
+                padding: 1rem 0;
+                text-align: center;
+            }
+            .card-container {
+                display: flex;
+                justify-content: space-around;
+                padding: 0rem 1rem 4rem;
+            }
+            .secondAnim {
+                animation: zoomIn 1s forwards;
+            }
+            .titleAnim {
+                animation: fadeIn 2s forwards;
+            }
+            .none {
+                opacity: 0;
+            }
+        }
+    }
+   
+}

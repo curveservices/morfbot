@@ -1,0 +1,95 @@
+footer {
+    position: relative;
+    bottom: 0;
+    margin: 0;
+    padding: 1rem;
+    width: 100%;
+    font-family: "Tomorrow";
+    background: var(--secondary);
+    color: var(--button);
+
+
+    .links {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 3rem;
+        font-size: 14px;
+
+        a {
+            cursor: pointer;
+            color: var(--button);
+        }
+
+        .home-link {
+            font-size: 24px;
+        }
+    }
+
+    hr {
+        margin: 3rem 5rem;
+        border: 1px solid var(--opposite);
+    }
+
+    .iconList {
+        margin: 0 3rem 0 0;
+    }
+
+    .copy-container {
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        position: relative;
+        top: 25%;
+        margin: 0 3rem 0 0;
+
+        a {
+            color: var(--button);
+        }
+
+        .small-print {
+            display: flex;
+            gap: 14px;
+        }
+
+        .copy {
+            font-size: 14px;
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 800px) {
+    footer {
+        height: 225px;
+        width: 100%;
+
+        .foot-title {
+            font-size: 14px;
+        }
+
+        .link-container {
+            gap: 5px;
+            margin: 0 10px;
+            font-size: 12px;
+
+            ul {
+                padding: 0;
+            }
+        }
+
+        .socials-container {
+            width: 30%;
+            margin: 10px;
+            padding: 10px;
+            font-size: 12px;
+        }
+
+        .copy {
+            font-size: 8px;
+            text-align: right;
+            margin-top: 5px;
+        }
+    }
+}

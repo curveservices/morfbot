@@ -2,9 +2,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--secondary);
+    background:var(--secondary);
     color: #fff;
-    position: fixed;
     width: 100%;
     top: 0;
     letter-spacing: 3px;
@@ -22,8 +21,10 @@ header {
     }
 
     .logo {
-        width: 75px;
-        border-radius: 50px;
+        width: 150px;
+        height: 50px;
+        border-radius: 5px;
+        object-fit: cover;
     }
 
     nav {
@@ -66,7 +67,7 @@ header {
             font-size: 1.1rem;
             text-decoration: none;
             transition: all 0.3s;
-            color: #fff;
+            color: var(--button);
 
             &:hover {
                 color: var(--oposite);

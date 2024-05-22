@@ -64,6 +64,7 @@ const Home = () => {
                                 li1="Balance due on completion"
                                 li2="Integrated to your website"
                                 li3="Lead Capture automated to your workflow"
+                                stripe="https://buy.stripe.com/00g2bTfRVfGZ676aEF"
                             />
                             <Card
                                 src={web}

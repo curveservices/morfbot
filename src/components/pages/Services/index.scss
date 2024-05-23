@@ -1,7 +1,14 @@
 .services-page {
     color: var(--button);
     .hero {
+        display: flex;
+        background-image: url("../../../assets/images/hero.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: var(--button);
         .textbox {
+            margin: 2em 4rem;
             .service-img {
 
             }

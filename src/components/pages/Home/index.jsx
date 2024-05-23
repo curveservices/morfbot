@@ -1,10 +1,9 @@
 import Button from "../../button";
 import Card from "../../Cards/price-cards";
-import auto from "../../../assets/images/1.png";
 import chatbot from "../../../assets/images/2.png";
 import web from "../../../assets/images/3.png";
 import chat from "../../../assets/images/4.png";
-import morf from "../../../assets/images/morfbot.png";
+import morf from "../../../assets/images/morfbot.webp";
 import "./index.scss";
 import CTA from "../../CTA";
 import { useState } from "react";
@@ -50,17 +49,9 @@ const Home = () => {
                         </div>
                         <div className={`card-container ${second ? "secondAnim" : "none"}`}>
                             <Card
-                                src={auto}
-                                title="Automation"
-                                price="£495"
-                                li1="Consultation Call"
-                                li2="Bussiness audit"
-                                li3="Automation of your workflows"
-                            />
-                            <Card
                                 src={chatbot}
-                                title="ChatBots"
-                                price="£1500"
+                                title="ChatBots &amp; Automation"
+                                price="Starting at £495 p/m"
                                 li1="Balance due on completion"
                                 li2="Integrated to your website"
                                 li3="Lead Capture automated to your workflow"
@@ -69,7 +60,7 @@ const Home = () => {
                             <Card
                                 src={web}
                                 title="Web Design"
-                                price="£1999"
+                                price="Starting from £695"
                                 li1="Ai website design 5 pages"
                                 li2="Chatbot intergation to your site"
                                 li3="500 B2B marketing emails"

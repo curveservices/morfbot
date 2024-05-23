@@ -1,39 +1,81 @@
 .services-page {
-    color: var(--button);
+    font-weight: 500;
+
     .hero {
+        height: 100vh;
         display: flex;
+        width: 100%;
         background-image: url("../../../assets/images/hero.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         color: var(--button);
-        .textbox {
-            margin: 2em 4rem;
-            .service-img {
 
+        .logo {
+            align-self: center;
+            margin-right: 8rem;
+            width: 350px;
+            height: 150px;
+            opacity: 0;
+            animation: fadeIn 1s 1.2s forwards;
+        }
+
+        .textbox {
+            margin: 0rem 5rem;
+            width: 45%;
+
+            h1 {
+                animation: fadeInLeft 1s forwards;
+            }
+            .text {
+                animation: fadeInUp 2s forwards;
+            }
+        }
+        
+    }
+
+    .first {
+        background: var(--button);
+        margin-bottom: 4rem;
+        .info {
+            padding: 2rem 5rem;
+        }
+    }
+
+    .section {
+        margin-bottom: 4rem;
+
+        .section-inner {
+            .textbox {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                gap: 4rem;
+                padding: 2rem 4rem;
+                background: var(--opposite);
             }
         }
     }
 
-    .second {
-        .textbox {
-            .service-img {
-
-            }
-        }    
+    .service-img {
+        max-width: 400px;
+        max-height: 400px;
+        border-radius: 8px;
     }
-    .third {
-        .textbox {
-            .service-img {
 
-            }
-        }
+    .animFirst {
+        animation: fadeIn 2s forwards;
     }
-    .forth {
-        .textbox {
-            .service-img {
-
-            }
-        }
+    
+    .animRight {
+        animation: fadeInRight 2s forwards;
+    }
+    
+    .animLeft {
+        animation: fadeInLeft 2s forwards;
+    }
+    
+    .none {
+        opacity: 0;
     }
 }

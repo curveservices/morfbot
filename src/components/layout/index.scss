@@ -17,10 +17,6 @@
             font-size: 40px;
         }
 
-        h2 {
-            margin: 0;
-        }
-
         p {
             font-size: 20px;
             min-width: fit-content;
@@ -28,14 +24,11 @@
         }
     }
     .cta {
-        height: 60vh;
-        margin: 2rem;
+        background: var(--button);
+        margin: 1rem 0;
+        padding: 2rem;
     }
     
-    .sep {
-        height: 10vh;
-        background: var(--button);
-    }
 
 }
 

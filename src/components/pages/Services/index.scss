@@ -53,6 +53,13 @@
                 gap: 4rem;
                 padding: 2rem 4rem;
                 background: var(--opposite);
+
+                .button-container {
+                    display: flex;
+                    justify-content: center;
+                    padding: 1rem;
+                    gap: 20px;
+                }
             }
         }
     }
@@ -87,13 +94,13 @@
             gap: 20px;
             .logo {
                 margin-right: 0rem;
-                width: 300px;
-                height: 150px;
+                width: 250px;
+                height: 125px;
             }
     
             .textbox {
                 margin: 1rem 2rem;
-                width: 100%;
+                width: 80%;
             }
         }
     

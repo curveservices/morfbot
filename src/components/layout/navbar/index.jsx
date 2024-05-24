@@ -90,6 +90,7 @@ const Navbar = () => {
                     link="https://calendly.com/morfbot/120mins?back=1&month=2024-05"
                     text="Book a Call"
                     background="var(--button)"
+                    target="_blank"
                 />
             </nav>
             <FontAwesomeIcon

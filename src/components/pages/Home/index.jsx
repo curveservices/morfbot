@@ -36,7 +36,11 @@ const Home = () => {
                     </div>
                     <div className="button-container">
                         <Button text="Contact Us" link="contact-us" background="var(--button)"/>
-                        <Button text="Book a Call" link="https://calendly.com/morfbot/120mins?back=1&month=2024-05" background="var(--opposite)" />
+                        <Button
+                            text="Book a Call"
+                            link="https://calendly.com/morfbot/120mins?back=1&month=2024-05"
+                            background="var(--opposite)"
+                            target="_blank"/>
                     </div>
 
                 </section>

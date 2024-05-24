@@ -5,6 +5,7 @@ import chatbot from "../../../assets/images/2.png";
 import web from "../../../assets/images/3.png";
 import chat from "../../../assets/images/4.png";
 import morf from "../../../assets/images/morfbot.webp";
+import Button from "../../button";
 import CTA from "../../CTA";
 import "./index.scss"
 
@@ -56,8 +57,8 @@ const Services = () => {
                             <img
                                 src={chatbot}
                                 alt="chatbots and automation"
-                                className={`service-img ${second ? "animRight" : "none"}`} />
-                            <div className={`text ${second ? "animLeft" : "none"}`}>
+                                className={`service-img ${second ? "animLeft" : "none"}`} />
+                            <div className={`text ${second ? "animRight" : "none"}`}>
                                 <h1>Chatbots &amp; Automation</h1>
                                 <h2>Starting at £495 p/m</h2>
                                 <p>First step is a consultation call, If you decide to work with us, 50% of the consultation fee will be deducted from your first month retainer. Our Ai systems are created, implemented and maintained by Morfbot Ai Business Solutions, Please see below a short list of services provided.</p>
@@ -67,6 +68,10 @@ const Services = () => {
                                     <li>Custom CRM solutions</li>
                                     <li>Automation and workflow: Lead capture, Appointment setting, non payment receipt, product API integration, feedback/survey forms and customer reviews and more.</li>
                                 </ul>
+                                <div className="button-container">
+                                    <Button text="Book a call" link="https://calendly.com/morfbot/120mins?back=1&month=2024-05" target="_blank"/>
+                                    <Button text="Contact us" background="var(--secondary)" color="var(--button)" link="contact-us" />
+                                </div>
                             </div>
                             
                         </div>
@@ -83,6 +88,10 @@ const Services = () => {
                                 <h1>Website design</h1>
                                 <h2>Starting from £695</h2>
                                 <p>Our 4 page web design starts from £695 with free hosting for the first year, Our website and chatbot solution is £1195 for a 4 page website and chatbot, this price may increase depending on your chatbot requirements, for larger websites please a quote will be given, a charge of £50 per month will be added to maintain your website and chatbot hosting, Website hosting is free for one year.</p>
+                                <div className="button-container">
+                                    <Button text="Book a call" link="https://calendly.com/morfbot/120mins?back=1&month=2024-05" target="_blank"/>
+                                    <Button text="Contact us" background="var(--secondary)" color="var(--button)" link="contact-us" />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -93,10 +102,14 @@ const Services = () => {
                             <img
                                 src={chat}
                                 alt="consultation"
-                                className={`service-img ${fourth ? "animRight" : "none"}`} />
-                            <div className={`text ${fourth ? "animLeft" : "none"}`}>
+                                className={`service-img ${fourth ? "animLeft" : "none"}`} />
+                            <div className={`text ${fourth ? "animRight" : "none"}`}>
                                 <h1>Consultation</h1>
                                 <p>We always strongly recommend a consultation, This gives both parties an opportunity to build a relationship from day one while gaining insight and knowledge on how you operate, Most business owners already have a good idea on how they would like their business to run so we listen to your ideas before suggesting our own, Don't worry if your unsure, Morfbot Ai Business Solutions are here to assist, we look forward to working with you. All consultations are online we use Google Meets.</p>
+                                <div className="button-container">
+                                    <Button text="Book a call" link="https://calendly.com/morfbot/120mins?back=1&month=2024-05" target="_blank"/>
+                                    <Button text="Contact us" background="var(--secondary)" color="var(--button)" link="contact-us"/>
+                                </div>
                             </div>
                         </div>
                     </div>

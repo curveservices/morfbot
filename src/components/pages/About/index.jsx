@@ -54,7 +54,6 @@ const About = () => {
                                     <p>We are proud to work with a diverse range of clients, from innovative startups to established businesses across various industries. Our solutions are designed to scale with your business, providing value at every stage of growth.</p>
                                 </div>
                             </div>
-                            <h2>Join us on a journey of innovation and efficiency. Together, we can create a smarter future for your business.</h2>
                         </div>
                     </div>
                 </section>

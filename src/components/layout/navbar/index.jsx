@@ -23,7 +23,9 @@ const Navbar = () => {
     return (
         <header>
             <NavLink to="/">
-                <img src={logo} alt="MorfBot" className="logo" />
+                <div className="title-container">
+                    <img src={logo} alt="MorfBot" className="logo" />
+               </div>
             </NavLink>
             <nav className={showNav ? "mobile-show" : ""}>
                 <NavLink
@@ -34,8 +36,10 @@ const Navbar = () => {
                     exact="true"
                     onClick={() => setShowNav(false)}
                 >
-                    <FontAwesomeIcon icon={faHouse} className="mobile-icon" />
-                    <div className="text">Home</div>
+                    <div className="menu-container">
+                        <FontAwesomeIcon icon={faHouse} className="mobile-icon" />
+                        <div className="text">Home</div>
+                    </div>
                 </NavLink>
                 <NavLink
                     to="services"
@@ -45,8 +49,10 @@ const Navbar = () => {
                     exact="true"
                     onClick={() => setShowNav(false)}
                 >
-                    <FontAwesomeIcon icon={faToolbox} className="mobile-icon" />
-                    <div className="text">Services</div>
+                    <div className="menu-container">
+                        <FontAwesomeIcon icon={faToolbox} className="mobile-icon" />
+                        <div className="text">Services</div>
+                    </div>
                 </NavLink>
                 <NavLink
                     to="about-us"
@@ -56,8 +62,10 @@ const Navbar = () => {
                     exact="true"
                     onClick={() => setShowNav(false)}
                 >
-                    <FontAwesomeIcon icon={faUserAlt} className="mobile-icon" />
-                    <div className="text">About Us</div>
+                    <div className="menu-container">
+                        <FontAwesomeIcon icon={faUserAlt} className="mobile-icon" />
+                        <div className="text">About Us</div>
+                    </div>
                 </NavLink>
                 <NavLink
                     to="contact-us"
@@ -67,8 +75,10 @@ const Navbar = () => {
                     exact="true"
                     onClick={() => setShowNav(false)}
                 >
-                    <FontAwesomeIcon icon={faEnvelopeOpen} className="mobile-icon" />
-                    <div className="text">Contact Us</div>
+                    <div className="menu-container">
+                        <FontAwesomeIcon icon={faEnvelopeOpen} className="mobile-icon" />
+                        <div className="text">Contact Us</div>
+                    </div>
                 </NavLink>
                 <FontAwesomeIcon
                     icon={faClose}

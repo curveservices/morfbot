@@ -53,6 +53,10 @@ const Services = () => {
                 <section className="section">
                     <div className="section-inner">
                         <div className="textbox">
+                            <img
+                                src={chatbot}
+                                alt="chatbots and automation"
+                                className={`service-img ${second ? "animRight" : "none"}`} />
                             <div className={`text ${second ? "animLeft" : "none"}`}>
                                 <h1>Chatbots &amp; Automation</h1>
                                 <h2>Starting at £495 p/m</h2>
@@ -64,11 +68,7 @@ const Services = () => {
                                     <li>Automation and workflow: Lead capture, Appointment setting, non payment receipt, product API integration, feedback/survey forms and customer reviews and more.</li>
                                 </ul>
                             </div>
-
-                            <img
-                                src={chatbot}
-                                alt="chatbots and automation"
-                                className={`service-img ${second ? "animRight" : "none"}`}/>
+                            
                         </div>
                     </div>
                 </section>
@@ -90,14 +90,14 @@ const Services = () => {
                 <section className="section">
                     <div className="section-inner">
                         <div className="textbox">
-                            <div className={`text ${fourth ? "animLeft" : "none"}`}>
-                                <h1>Consultation</h1>
-                                <p>We always strongly recommend a consultation, This gives both parties an opportunity to build a relationship from day one while gaining insight and knowledge on how you operate, Most business owners already have a good idea on how they would like their business to run so we listen to your ideas before suggesting our own, Don't worry if your unsure, Morfbot Ai Business Solutions are here to assist, we look forward to working with you. All consultations are online we use Google Meets.</p>
-                            </div>
                             <img
                                 src={chat}
                                 alt="consultation"
                                 className={`service-img ${fourth ? "animRight" : "none"}`} />
+                            <div className={`text ${fourth ? "animLeft" : "none"}`}>
+                                <h1>Consultation</h1>
+                                <p>We always strongly recommend a consultation, This gives both parties an opportunity to build a relationship from day one while gaining insight and knowledge on how you operate, Most business owners already have a good idea on how they would like their business to run so we listen to your ideas before suggesting our own, Don't worry if your unsure, Morfbot Ai Business Solutions are here to assist, we look forward to working with you. All consultations are online we use Google Meets.</p>
+                            </div>
                         </div>
                     </div>
                 </section>

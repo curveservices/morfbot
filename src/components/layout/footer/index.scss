@@ -56,40 +56,42 @@ footer {
             font-size: 14px;
         }
     }
-
-
 }
 
 @media screen and (max-width: 800px) {
     footer {
-        height: 225px;
-        width: 100%;
-
-        .foot-title {
-            font-size: 14px;
-        }
-
-        .link-container {
-            gap: 5px;
-            margin: 0 10px;
-            font-size: 12px;
-
-            ul {
-                padding: 0;
+        padding: 0.2rem 0;
+    
+        .links {
+            margin: 2rem;
+            font-size: 11px;
+    
+            .home-link {
+                font-size: 14px;
             }
         }
-
-        .socials-container {
-            width: 30%;
-            margin: 10px;
-            padding: 10px;
-            font-size: 12px;
+    
+        hr {
+            margin: 1rem 2rem;
         }
-
-        .copy {
-            font-size: 8px;
-            text-align: right;
-            margin-top: 5px;
+    
+        .iconList {
+            margin: 0rem;
         }
+    
+        .copy-container {
+            gap: 5px;
+            margin: 1rem;
+    
+            .small-print {
+                gap: 5px;
+            }
+    
+            .copy {
+                font-size: 10px;
+            }
+        }
+    
+    
     }
 }

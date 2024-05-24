@@ -11,8 +11,8 @@ const Footer = () => {
                     <NavLink to="/">Home</NavLink>
                     <NavLink to="services">Services</NavLink>
                     <NavLink to="/" className="home-link">MorfBot</NavLink>
-                    <NavLink to="about-us">About Us</NavLink>
-                    <NavLink to="contact-us">Contact Us</NavLink>
+                    <NavLink to="about-us">About</NavLink>
+                    <NavLink to="contact-us">Contact</NavLink>
                 </div>
             </div>
             <hr className="div-line"></hr>

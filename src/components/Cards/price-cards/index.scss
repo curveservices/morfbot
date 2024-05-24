@@ -40,3 +40,30 @@
         padding: 2rem;
     }
 }
+
+@media screen and (max-width: 920px) {
+    .card {
+        max-width: 300px;
+    
+        &:hover {
+            transform: scale(1.01);
+        }
+    
+        .title {
+            font-size: 24px;
+        }
+    
+        .price {
+            font-size: 18px;
+        }
+    
+        .cardImg {
+            width: 300px;
+            height: 200px;
+        }
+    
+        .btn-container {
+            padding: 1rem;
+        }
+    }
+}

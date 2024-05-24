@@ -1,4 +1,4 @@
-import { faEnvelopeOpen, faHouse, faToolbox, faUserAlt } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faClose, faEnvelopeOpen, faHouse, faToolbox, faUserAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./index.scss";
 import { useEffect, useState } from "react";
@@ -70,13 +70,24 @@ const Navbar = () => {
                     <FontAwesomeIcon icon={faEnvelopeOpen} className="mobile-icon" />
                     <div className="text">Contact Us</div>
                 </NavLink>
+                <FontAwesomeIcon
+                    icon={faClose}
+                    size="1x"
+                    className="close-icon"
+                    onClick={() => setShowNav(false)}
+                />
                 <Button
                     link="https://calendly.com/morfbot/120mins?back=1&month=2024-05"
                     text="Book a Call"
                     background="var(--button)"
                 />
             </nav>
-
+            <FontAwesomeIcon
+                icon={faBars}
+                size="1x"
+                className="hamburger"
+                onClick={() => setShowNav(true)}
+            />
         </header>
     );
 }

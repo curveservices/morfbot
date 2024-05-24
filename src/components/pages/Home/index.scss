@@ -66,6 +66,60 @@
                 opacity: 0;
             }
         }
+    }  
+}
+
+@media screen and (max-width: 920px) {
+    .home-page {
+        .hero {
+            height: 70vh;
+    
+            .logo {
+                width: 200px;
+                height: 100px;
+            }
+        }
+    
+        .textbox {
+            .hero-title {
+                margin: 3rem 0.5rem 0 3rem;
+                font-size: 28px;
+                max-width: 100%;
+            }
+        }
+    
+        .button-container {
+            justify-content: start;
+            gap: 20px;
+            padding: 2rem;
+        }
+    
+        .second-section {
+            margin-bottom: 3rem;
+    
+            .second-inner {
+                .textbox {
+                    margin: 0rem 1rem;
+                    padding: 1rem 0;
+                    text-align: center;
+                }
+    
+                .card-container {
+                    padding: 2rem 2rem;
+                }
+    
+                .secondAnim {
+                    animation: zoomIn 1s forwards;
+                }
+    
+                .titleAnim {
+                    animation: fadeIn 2s forwards;
+                }
+    
+                .none {
+                    opacity: 0;
+                }
+            }
+        }
     }
-   
 }

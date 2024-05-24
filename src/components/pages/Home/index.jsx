@@ -9,6 +9,7 @@ import CTA from "../../CTA";
 import { useState } from "react";
 import { useEffect } from "react";
 import Loader from "react-loaders";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
     const [second, setSecond] = useState(false)
@@ -48,33 +49,39 @@ const Home = () => {
                             <p>Our business models works on a monthly retainer base so no client has any cash outlay, depending on the size and what is needed the price will be determined with a minimum of 6 months service retained. (This excludes website cost) </p>
                         </div>
                         <div className={`card-container ${second ? "secondAnim" : "none"}`}>
-                            <Card
-                                src={chatbot}
-                                title="ChatBots &amp; Automation"
-                                price="Starting at £495 p/m"
-                                li1="Balance due on completion"
-                                li2="Integrated to your website"
-                                li3="Lead Capture automated to your workflow"
-                                stripe="https://buy.stripe.com/00g2bTfRVfGZ676aEF"
-                            />
-                            <Card
-                                src={web}
-                                title="Web Design"
-                                price="Starting from £695"
-                                li1="Ai website design 5 pages"
-                                li2="Chatbot intergation to your site"
-                                li3="500 B2B marketing emails"
-                                stripe="https://buy.stripe.com/cN29EleNR8exeDC3cc"
-                            />
-                            <Card
-                                src={chat}
-                                title="Consultation"
-                                price="£249"
-                                li1="Virtual call with no time limit"
-                                li2="Discussion based on your business."
-                                li3=""
-                                stripe="https://buy.stripe.com/00g2bTfRVfGZ676aEF"
-                            />
+                            <NavLink to="services">
+                                <Card
+                                    src={chatbot}
+                                    title="ChatBots &amp; Automation"
+                                    price="Starting at £495 p/m"
+                                    li1="Chatbot integrated to your website"
+                                    li2="Automted workflow integration"
+                                    li3="Lead Capture and appointment booking"
+                                    stripe="https://buy.stripe.com/00g2bTfRVfGZ676aEF"
+                                />
+                            </NavLink>
+                            <NavLink to="services">
+                                <Card
+                                    src={web}
+                                    title="Web Design"
+                                    price="Starting from £695"
+                                    li1="Custom website design with 4 pages"
+                                    li2="Chatbot intergation to your site"
+                                    li3="optimised to mobile as standard"
+                                    stripe="https://buy.stripe.com/cN29EleNR8exeDC3cc"
+                                />
+                            </NavLink>
+                            <NavLink to="services">
+                                <Card
+                                    src={chat}
+                                    title="Consultation"
+                                    price="£249"
+                                    li1="Virtual call with no time limit"
+                                    li2="Discussion based on your business."
+                                    li3="Objectives and planning"
+                                    stripe="https://buy.stripe.com/00g2bTfRVfGZ676aEF"
+                                />
+                            </NavLink>
                         </div>
 
                     </div>

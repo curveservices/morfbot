@@ -6,9 +6,7 @@ const CTA = () => {
         <div className="call-to-action">
             <div className="text-container">
                 <h2 className="cta-title">Get in Touch</h2>
-                <p className="cta-p">
-                    Ready to transform your business with AI-driven solutions?</p>
-                <p className="cta-p">Contact us today to discuss your needs and find out how Morfbot AI Business Solutions can help you achieve your goals, Click on our chatbot to book a consultation.</p>
+                <p className="cta-p">Contact us today to discuss your needs and find out how Morfbot AI Business Solutions can help you achieve your goals.</p>
             </div>
             <div className="btn-container">
                 <Button

@@ -5,7 +5,6 @@ header {
     background:var(--secondary);
     color: #fff;
     width: 100%;
-    top: 0;
     letter-spacing: 3px;
     margin: 0;
     padding: 0.5rem 2rem;
@@ -35,32 +34,6 @@ header {
         text-align: center;
         padding: 20px 10px;
 
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            padding: 1rem;
-            top: 60%;
-            left: 30%;
-            background: var(--secondary);
-            box-shadow: var(--global);
-        }
-
-
-
-        .dropdown-content a {
-            color: #000;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-            animation: fadeIn 1s forwards;
-        }
-
         a {
             text-align: center;
             line-height: 40px;
@@ -84,68 +57,75 @@ header {
 
 @media screen and (max-width: 920px) {
     header {
-        padding: 0rem;
-
-        .title {
-            display: none;
-        }
-
+        padding: 0.5rem;
+    
         .logo {
             display: block;
             margin-top: 0px;
             width: 75px;
         }
-
+    
         nav {
             display: none;
         }
-
+    
         nav {
             position: absolute;
-            top: 5px;
+            top: 0;
             right: 0;
             width: 100%;
-            height: 100%;
-            background: var(--primary);
+            background: var(--secondary);
             padding-top: 30px;
             padding-right: 40px;
             gap: 2rem;
             z-index: 2;
-            margin: 0;
-
-            .text {
-                display: none;
-            }
-
+    
             .mobile-icon {
-                display: flex;
+                display: block;
+                font-size: 24px;
             }
-
+    
             &.mobile-show {
                 display: flex;
-                justify-content: space-evenly;
-                padding-bottom: 15px;
-                height: 60px;
+                flex-direction: column;
+                gap: 50px;
+                padding: 5rem 0;
+                height: 100vh;
                 animation: bounceInRight 1s;
+    
+                .text {
+                    text-align: center;
+                    display: block;
+                    font-size: 24px;
+                }
+    
+                .menu-container {
+                    display: flex;
+                    align-items: center;
+                    width: 200px;
+                    gap: 20px;
+                }
             }
         }
     }
-
+    
     .navbar-scroll {
         display: none;
     }
-
+    
     .hamburger {
         display: block;
         position: absolute;
         top: 20px;
         right: 35px;
+        font-size: 24px;
     }
-
+    
     .close-icon {
         display: block;
         position: absolute;
-        right: 25px;
-        top: 0;
+        right: 35px;
+        top: 2.5%;
+        font-size: 24px;
     }
 }

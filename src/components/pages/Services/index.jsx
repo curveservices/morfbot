@@ -1,6 +1,5 @@
-import Helmet from "helmet";
-import { useEffect } from "react";
-import { useState } from "react";
+import Helmet from "react-helmet";
+import { useEffect, useState } from "react";
 import Loader from "react-loaders";
 import chatbot from "../../../assets/images/2.png";
 import web from "../../../assets/images/3.png";
@@ -120,9 +119,12 @@ const Services = () => {
                 </section>
                 <div className="sep"></div>
             </div>
-            <Helmet>
-                <title>Services | AI Solutions and Automation Agency</title>
-            </Helmet>
+            <div>
+                <Helmet>
+                    <title>Services | AI Solutions and Automation Agency</title>
+                </Helmet>
+            </div>
+          
             <Loader type="ball-spin-fade-loader" color="white" />
         </>
         

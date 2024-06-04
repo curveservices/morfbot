@@ -6,11 +6,10 @@ import chat from "../../../assets/images/4.png";
 import morf from "../../../assets/images/morfbot.webp";
 import "./index.scss";
 import CTA from "../../CTA";
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import Loader from "react-loaders";
 import { NavLink } from "react-router-dom";
-import Helmet from "helmet";
+import Helmet from "react-helmet";
 
 const Home = () => {
     const [second, setSecond] = useState(false)

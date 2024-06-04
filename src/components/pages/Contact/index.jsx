@@ -1,5 +1,6 @@
 import { faCalendarWeek } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Helmet from "helmet";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import Loader from "react-loaders";
 import { Link } from "react-router-dom";
@@ -83,6 +84,9 @@ const Contact = () => {
                     </MapContainer>
                 </div>
             </div>
+            <Helmet>
+                <title>Contact Us | AI Solutions and Automation Agency</title>
+            </Helmet>
             <Loader type="ball-spin-fade-loader" color="white" />
         </>
     );

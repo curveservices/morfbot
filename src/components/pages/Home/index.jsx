@@ -10,6 +10,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import Loader from "react-loaders";
 import { NavLink } from "react-router-dom";
+import Helmet from "helmet";
 
 const Home = () => {
     const [second, setSecond] = useState(false)
@@ -95,6 +96,9 @@ const Home = () => {
                 </section>
                 <div className="sep"></div>
             </div>
+            <Helmet>
+                <title>Home | AI Solutions and Automation Agency</title>
+            </Helmet>
             <Loader type="ball-spin-fade-loader" color="white" />
         </>
     );

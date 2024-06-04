@@ -1,3 +1,4 @@
+import Helmet from "helmet";
 import { useEffect } from "react";
 import { useState } from "react";
 import Loader from "react-loaders";
@@ -119,6 +120,9 @@ const Services = () => {
                 </section>
                 <div className="sep"></div>
             </div>
+            <Helmet>
+                <title>Services | AI Solutions and Automation Agency</title>
+            </Helmet>
             <Loader type="ball-spin-fade-loader" color="white" />
         </>
         

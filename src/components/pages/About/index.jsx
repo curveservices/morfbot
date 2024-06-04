@@ -5,6 +5,7 @@ import CTA from "../../CTA";
 import Loader from "react-loaders";
 import { useState } from "react";
 import { useEffect } from "react";
+import Helmet from "helmet";
 
 const About = () => {
     const [leftScroll, setLeftScroll] = useState(false);
@@ -91,6 +92,9 @@ const About = () => {
                 </section>
                 <div className="sep"></div>
             </div>
+            <Helmet>
+                <title>About Us | AI Solutions and Automation Agency</title>
+            </Helmet>
             <Loader type="ball-spin-fade-loader" color="white" />
         </>
      );

@@ -17,15 +17,13 @@ const Footer = () => {
             </div>
             <hr className="div-line"></hr>
             <div className="socials-container">
-                <Socials />
+                <Socials
+                    lilink="https://www.linkedin.com/in/stephen-hodge-b62330300/"
+                    instaLink=""
+                />
             </div>
             <div className="copy-container">
                 <p className="copy">Copyright <Link to="https://immutable-studio.co.uk/">Immutable Studio &copy;{year}</Link></p>
-                <div className="small-print">
-                    <p className="copy"><Link to="privacy-policy">Privacy</Link></p>
-                    <p className="copy"><Link to="terms">Terms</Link></p>
-                </div>
-
             </div>
 
         </footer>

@@ -1,0 +1,143 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background: var(--background-reverse);
+  color: #fff;
+  margin: 1rem 6rem;
+  width: 90%;
+  max-width: 1220px;
+  height: 70px;
+  z-index: 9999;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  border-radius: 100px;
+  padding: 1rem 2rem;
+  transition: all 0.6s ease-in-out;
+  cursor: pointer;
+  .logo {
+    width: 150px;
+    height: 50px;
+    object-fit: cover;
+    padding-top: 0.5rem;
+  }
+  .mobile-logo {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.75em;
+    color: #fff;
+    .active .menu-container {
+      border-bottom: 2px solid var(--secondary);
+    }
+    .text:hover {
+      color: var(--secondary);
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}
+.navbar-scroll {
+  opacity: 1;
+  visibility: visible;
+  transition:
+    opacity 0.5s ease-in-out,
+    visibility 0.5s ease-in-out;
+}
+.navbar-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.mobile-icon {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    padding: 0 2em;
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+    background: none;
+
+    .logo {
+      display: none;
+    }
+    .mobile-logo {
+      display: block;
+      width: 100px;
+      height: auto;
+      object-fit: contain;
+      padding-top: 5px;
+    }
+
+    nav {
+      display: none;
+    }
+
+    nav {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      z-index: -1;
+      background: #393939;
+      background-image: url(../../assets/images/hero.webp);
+      background-size: cover;
+      background-position-x: -1070px;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position-y: -65px;
+      background-blend-mode: overlay;
+      background-repeat: no-repeat;
+      
+      .active {
+        border-bottom: none;
+      }
+      
+        .desktop-icon {
+          display: none;
+        }
+      
+        .mobile-icon {
+          display: block;
+          font-size: 25px;
+        }
+      
+        &.mobile-show {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: start;
+          gap: 2.5rem;
+          padding: 8rem 5rem;
+          height: 100vh;
+          width: 100%;
+          font-weight: bold;
+      
+          .text {
+            font-size: 24px;
+          }
+      
+          .menu-container {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-top: 1rem;
+            border-bottom: none;
+          }
+        }
+    }
+  }
+  header.menu-open {
+  z-index: 9999;
+  }
+  .menu-close{
+    animation: fadeOutLeft 0.5s backwards;
+  }
+}

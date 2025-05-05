@@ -1,0 +1,270 @@
+.app {
+  will-change: contents;
+  transform-style: preserve-3d;
+  font-family: "Poppins", serif;
+  font-display: swap;
+
+  .home-page,
+  .services-page,
+  .about-page,
+  .contact-page,
+  .policy-page {
+    animation: fadeIn 1s forwards;
+    padding-top: 8rem;
+    background: var(--background);
+    h1 {
+      font-size: 60px;
+      font-weight: 700;
+      line-height: 124.5%;
+      color: #fff;
+      margin: 0;
+    }
+    h2 {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 124.5%;
+      color: #fff;
+      margin: 0;
+    }
+    h3 {
+      font-size: 20px;
+      font-weight: 500;
+      margin: 0;
+    }
+    p {
+      font-size: 16px;
+      font-family: "Merriweather", sans-serif;
+      color: #fff;
+      margin: 0;
+    }
+    .subtitle {
+      font-size: 18px;
+      font-weight: 500;
+      font-family: "Merriweather", sans-serif;
+      text-transform: uppercase;
+      color: var(--secondary);
+      letter-spacing: 2px;
+      margin: 0;
+      animation: fadeInUp 0.2s 0.5s backwards;
+    }
+    span {
+      color: var(--secondary);
+    }
+    .divider {
+      width: 150px;
+      height: 2px;
+      background: var(--secondary);
+      border-radius: 5px;
+      margin: 1rem 0;
+    }
+    .hero {
+      padding: 0rem 6rem 0;
+      height: 100vh;
+      .hero-img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        opacity: 0.2;
+        object-fit: cover;
+        filter: brightness(1.3);
+        mask-image:
+          linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 20%),
+          // top fade
+          linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 20%),
+          // bottom fade
+          linear-gradient(
+              to right,
+              rgba(0, 0, 0, 0) 0%,
+              rgba(0, 0, 0, 1) 30%
+            ); // right fade
+
+        -webkit-mask-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 1) 20%
+          ),
+          linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 20%),
+          linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30%);
+
+        mask-composite: intersect;
+        -webkit-mask-composite: destination-in;
+      }
+      .text-box {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        max-width: 80%;
+        padding: 4rem 0rem;
+      }
+    }
+    .second-inner,
+    .third-inner {
+      display: flex;
+      justify-content: space-between;
+      padding: 3rem 0;
+      .reverse {
+        padding: 0rem 3rem 0 6rem !important;
+      }
+      .text-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        padding: 0rem 6rem 0 3rem;
+      }
+      .oposite {
+        object-fit: cover;
+        mask-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 1) 20%
+          ),
+          linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 10%),
+          linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%) !important; // left fade
+
+        -webkit-mask-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 1) 20%
+          ),
+          linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 10%),
+          linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%) !important;
+
+        mask-composite: intersect;
+        -webkit-mask-composite: destination-in;
+      }
+      .image {
+        width: 700px;
+        height: auto;
+        max-height: 700px;
+        object-fit: cover;
+        opacity: 0.8;
+        mask-image:
+          linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 20%),
+          // top fade
+          linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 10%),
+          // bottom fade
+          linear-gradient(
+              to right,
+              rgba(0, 0, 0, 0) 0%,
+              rgba(0, 0, 0, 1) 15%
+            ); // right fade
+
+        -webkit-mask-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 1) 20%
+          ),
+          linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 10%),
+          linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 15%);
+
+        mask-composite: intersect;
+        -webkit-mask-composite: destination-in;
+      }
+    }
+    .anim {
+      animation: fadeIn 2s forwards;
+      opacity: 1;
+    }
+    .none {
+      opacity: 0;
+    }
+  }
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 15rem;
+  right: 0;
+  font-size: 24px;
+  padding: 5px;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 20% 0% 0% 20%;
+  width: 50px;
+  height: 50px;
+  z-index: 9999;
+  border: none;
+  box-shadow: var(--button-shadow);
+  cursor: pointer;
+  animation: fadeInRight 2s;
+  transition: all 0.5s;
+
+  &:hover {
+    background: var(--secondary);
+    color: #000;
+    padding: 0 0 10px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .app {
+    .home-page,
+    .services-page,
+    .about-page,
+    .contact-page,
+    .policy-page {
+      h1 {
+        font-size: 40px;
+      }
+
+      h2 {
+        font-size: 32px;
+      }
+      h3 {
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+      .subtitle {
+        font-size: 18px;
+      }
+      .hero {
+        padding: 0 2rem;
+        height: initial;
+        margin-bottom: 6rem;
+        .text-box {
+            padding: 2rem 0;
+          max-width: initial;
+        }
+      }
+      .third-inner {
+        flex-direction: column-reverse !important;
+      }
+      .second-inner,
+      .third-inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0;
+
+        .reverse {
+          padding: 1rem 2rem !important;
+        }
+
+        .text-box {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 1rem;
+          padding: 2rem;
+        }
+
+        .image {
+          width: 100%;
+          
+        }
+      }
+    }
+  }
+  .back-to-top {
+    bottom: 1;
+    font-size: 18px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+  }
+}

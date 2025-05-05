@@ -6,7 +6,7 @@ import chatbot from "../../assets/images/2.webp";
 import web from "../../assets/images/3.webp";
 import chat from "../../assets/images/4.webp";
 import hero from "../../assets/images/hero.webp";
-import service1 from "../../assets/images/image.webp";
+import service1 from "../../assets/images/Image.webp";
 import service2 from "../../assets/images/service2.webp";
 import "./index.scss";
 

@@ -1,69 +1,69 @@
 .card {
-    max-width: 450px;
-    padding: 0;
-    margin: 0;
-    border: 1px solid var(--secondary);
-    background: var(--primary);
-    box-shadow: var(--button-shadow);
-    border-radius: 10px;
+  max-width: 450px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid var(--secondary);
+  background: var(--primary);
+  box-shadow: var(--button-shadow);
+  border-radius: 10px;
+  text-align: center;
+  &:hover {
+    transform: scale(1.01);
+  }
+
+  .title {
+    padding: 1rem;
     text-align: center;
-    &:hover {
-        transform: scale(1.01);
-    }
+    font-size: 28px;
+    font-weight: 700;
+  }
+  .price {
+    font-size: 20px;
+    font-weight: 600;
+  }
 
-    .title {
-        padding: 1rem;
-        text-align: center;
-        font-size: 28px;
-        font-weight: 700;
-    }
-    .price {
-        font-size: 20px;
-        font-weight: 600;
-    }
+  li {
+    list-style: none;
+    padding: 0.2rem;
+  }
 
-    li {
-        list-style: none;
-        padding: 0.2rem;
-    }
-
-    .cardImg {
-        object-fit: cover;
-        width: 450px;
-        height: 250px;
-        border-radius: 10px 10px 0px 0px;
-    }
-    .btn-container {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        padding: 2rem;
-    }
+  .cardImg {
+    object-fit: cover;
+    width: 450px;
+    height: 250px;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 2rem;
+  }
 }
 
 @media screen and (max-width: 920px) {
-    .card {
-        max-width: 300px;
-    
-        &:hover {
-            transform: scale(1.01);
-        }
-    
-        .title {
-            font-size: 24px;
-        }
-    
-        .price {
-            font-size: 18px;
-        }
-    
-        .cardImg {
-            width: 300px;
-            height: 200px;
-        }
-    
-        .btn-container {
-            padding: 1rem;
-        }
+  .card {
+    max-width: 300px;
+
+    &:hover {
+      transform: scale(1.01);
     }
+
+    .title {
+      font-size: 24px;
+    }
+
+    .price {
+      font-size: 18px;
+    }
+
+    .cardImg {
+      width: 300px;
+      height: 200px;
+    }
+
+    .btn-container {
+      padding: 1rem;
+    }
+  }
 }

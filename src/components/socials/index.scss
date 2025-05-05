@@ -1,38 +1,39 @@
 .iconList {
-    display: flex;
-    justify-content: center;
-    gap: 2em;
-    list-style: none;
-    text-align: center;
-    margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  list-style: none;
+  text-align: center;
+  margin: 0;
 }
 
 .icons {
-    a {
-        padding: 8px;
-        display: block;
-        font-size: 28px;
-        line-height: 20px;
-        color: #fff;
+  a {
+    padding: 8px;
+    display: block;
+    font-size: 28px;
+    line-height: 20px;
+    color: var(--secondary);
+    transition: all 0.3s ease-in-out;
 
-        &:hover svg {
-            color: var(--opposite);
-            transform: scale(1.2);
-        }
+    &:hover {
+      color: #fff;
+      transform: scale(1.2);
     }
+  }
 }
 
 @media screen and (max-width: 800px) {
-    .iconList {
-        top: 0;
-        gap: 20px;
-    }
+  .iconList {
+    top: 0;
+    gap: 20px;
+  }
 
-    .icons {
-        a {
-            font-size: 14px;
-            line-height: 0px;
-            padding: 0px;
-        }
+  .icons {
+    a {
+      font-size: 14px;
+      line-height: 0px;
+      padding: 0px;
     }
+  }
 }

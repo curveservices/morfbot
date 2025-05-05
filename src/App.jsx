@@ -5,21 +5,51 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import "./App.scss";
-import Layout from "./components/layout";
-import NotFound from "./components/pages/404";
-import About from "./components/pages/About";
-import Contact from "./components/pages/Contact";
-import Home from "./components/pages/Home";
-import Services from "./components/pages/Services";
+import Layout from "./layout/main";
+import NotFound from "./pages/404";
+import About from "./pages/about";
+import Contact from "./pages/contact";
+import Home from "./pages/home";
+import Services from "./pages/services";
+import LoadingSpinner from "./components/loadingSpinner";
+import { Suspense } from "react";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path="about-us" element={<About />} />
-        <Route path="services" element={<Services />} />
-        <Route path="contact-us" element={<Contact />} />
+        <Route
+          index
+          element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <Home />
+            </Suspense>
+          }
+        />
+        <Route
+          path="about-us"
+          element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <About />
+            </Suspense>
+          }
+        />
+        <Route
+          path="services"
+          element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <Services />
+            </Suspense>
+          }
+        />
+        <Route
+          path="contact-us"
+          element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <Contact />
+            </Suspense>
+          }
+        />
       </Route>
       <Route path="*" element={<NotFound />} />
     </>,

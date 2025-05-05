@@ -1,65 +1,65 @@
 .call-to-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem 6rem;
+  padding: 2rem 1rem;
+  border-radius: 10px;
+  box-shadow: var(--box);
+  background: var(--background-reverse);
+  color: #000;
+
+  .text-container {
+    width: 50%;
+
+    .cta-title {
+      margin: 0;
+      padding: 0rem 4rem;
+      font-size: 3rem;
+    }
+
+    .cta-p {
+      font-weight: 600;
+      margin: 2rem 4rem;
+    }
+  }
+
+  .btn-container {
     display: flex;
-    justify-content: space-between;
+    width: 50%;
+    height: 40%;
+    gap: 2rem;
+    justify-content: center;
     align-items: center;
-    margin: 2rem;
-    padding: 2rem 1rem;
-    border-radius: 10px;
-    box-shadow: var(--global-shadow);
-    background: var(--primary);
-    color: #000;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .call-to-action {
+    flex-direction: column;
+    width: initial;
+    margin: 3rem 2rem;
+    padding: 1rem;
 
     .text-container {
-        width: 50%;
+      width: initial;
 
-        .cta-title {
-            margin: 0;
-            padding: 0rem 4rem;
-            font-size: 3rem;
-        }
+      .cta-title {
+        padding: 0rem;
+        font-size: 28px;
+      }
 
-        .cta-p {
-            font-weight: 600;
-            margin: 2rem 4rem;
-        }
+      .cta-p {
+        margin: 1rem 0;
+      }
     }
 
     .btn-container {
-        display: flex;
-        width: 50%;
-        height: 40%;
-        gap: 2rem;
-        justify-content: center;
-        align-items: center;
+      flex-direction: column;
+      height: initial;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
     }
-}
-
-@media screen and (max-width: 430px) {
-    .call-to-action {
-        flex-direction: column;
-        width: 100%;
-        margin: 0rem;
-        padding: 2rem 1rem;
-    
-        .text-container {
-            width: 100%;
-    
-            .cta-title {
-                padding: 0rem;
-                font-size: 28px;
-            }
-    
-            .cta-p {
-                margin: 1rem 0;
-            }
-        }
-    
-        .btn-container {
-            flex-direction: column;
-            height: initial;
-            gap: 20px;
-            justify-content: center;
-            align-items: center;
-        }
-    }
+  }
 }

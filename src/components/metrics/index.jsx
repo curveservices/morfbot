@@ -1,7 +1,7 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import CountUp from "react-countup";
-import group from "../../assets/images/group.webp";
+import group from "../../assets/images/Group.webp";
 import project from "../../assets/images/projects.webp";
 import customers from "../../assets/images/customers.webp";
 import awards from "../../assets/images/awards.webp";

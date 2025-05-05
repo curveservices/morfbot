@@ -1,32 +1,36 @@
-button {
-    text-transform: capitalize;
-    letter-spacing: 4px;
-    font-family: "Tomorrow";
-    font-weight: bold;
-    text-decoration: none;
-    text-align: center;
-    width: 200px;
-    padding: 1rem;
-    border-radius: 5px;
-    border: none;
-    box-shadow: var(--button-shadow);
-    cursor: pointer;
+.flat-btn {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Merriweather", sans-serif;
+  text-decoration: none;
+  text-align: center;
+  width: 200px;
+  padding: 1rem;
+  border-radius: 2px;
+  border: 2px solid var(--secondary);
+  background: transparent;
+  color: #fff;
+  font-size: 16px;
+  box-shadow: var(--button-shadow);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 
-    &:hover {
-        transform: translateY(-2px);
-        background: var(--primary);
-    }
-
+  &:hover {
+    transform: translateY(-1px);
+    background: var(--background-reverse);
+    box-shadow: var(--box);
+    border: 2px solid #fff;
+  }
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 920px) {
-    button {
-        width: 150px;
-        font-size: 10px;
-        margin: 0;
-    }
+  button {
+    width: 150px;
+    font-size: 10px;
+    margin: 0;
+  }
 }

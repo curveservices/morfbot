@@ -57,7 +57,7 @@ header {
   display: none;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   header {
     padding: 0 2em;
     margin: 0;
@@ -89,7 +89,7 @@ header {
       background: #393939;
       background-image: url(../../assets/images/hero.webp);
       background-size: cover;
-      background-position-x: -1070px;
+      background-position-x: -1050px;
       background-attachment: fixed;
       background-repeat: no-repeat;
       background-position-y: -65px;
@@ -140,4 +140,78 @@ header {
   .menu-close{
     animation: fadeOutLeft 0.5s backwards;
   }
+}
+
+@media screen and (min-width: 768px)  and (max-width: 1024px) {
+  header {
+    padding: 0 1em;
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+    background: none;
+
+    .logo {
+      display: none;
+    }
+    .mobile-logo {
+      display: block;
+      width: 80px;
+      height: auto;
+      object-fit: contain;
+      padding-top: 5px;
+    }
+
+    nav {
+      display: none;
+    }
+    nav {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      z-index: -1;
+      background: #393939;
+      background-image: url(../../assets/images/hero.webp);
+      background-size: cover;
+      background-position-x: -200px;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-blend-mode: overlay;
+      background-repeat: no-repeat;
+
+        .desktop-icon {
+          display: none;
+        }
+      
+        .mobile-icon {
+          display: block;
+          font-size: 25px;
+        }
+      
+        &.mobile-show {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: start;
+          gap: 2.5rem;
+          padding: 8rem 5rem;
+          height: 100vh;
+          width: 100%;
+          font-weight: bold;
+      
+          .text {
+            font-size: 24px;
+          }
+      
+          .menu-container {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-top: 1rem;
+            border-bottom: none;
+          }
+        }
+    }
+  }
+  
 }

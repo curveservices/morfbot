@@ -45,7 +45,7 @@ const Services = () => {
             />
           </div>
         </section>
-        
+
         <section className="second-section">
           <div className={`second-inner ${second ? "anim" : "none"}`}>
             <div className="text-box reverse">
@@ -69,7 +69,7 @@ const Services = () => {
             <img src={service1} alt="Expert AI angency UK" className="image" />
           </div>
         </section>
-        
+
         <section className="third-section">
           <div className={`third-inner ${third ? "anim" : "none"}`}>
             <img
@@ -102,7 +102,7 @@ const Services = () => {
             </div>
           </div>
         </section>
-        
+
         <section className="cta">
           <CTA />
         </section>
@@ -112,10 +112,10 @@ const Services = () => {
               <img
                 src={chatbot}
                 alt="chatbots and automation"
-                className={`service-img`}
+                className="service-img"
               />
-              <div className={`text`}>
-                <div className="service-title">
+              <div className="text">
+                <div className="service-title" id="chatbots">
                   AI CHAT ASSISTANTS
                 </div>
                 <div className="subtitle">Starting at £495 p/m</div>
@@ -140,9 +140,11 @@ const Services = () => {
               </div>
             </div>
             <div className="service">
-              <img src={web} alt="ai automation uk" className={`service-img`} />
-              <div className={`text`}>
-                <div className="service-title">AI AUTOMATION</div>
+              <img src={web} alt="ai automation uk" className="service-img" />
+              <div className="text">
+                <div className="service-title" id="automation">
+                  AI AUTOMATION
+                </div>
                 <div className="subtitle">Starting from £695</div>
                 <p>
                   Our Ai systems are created, implemented and maintained by
@@ -157,9 +159,11 @@ const Services = () => {
               </div>
             </div>
             <div className="service">
-              <img src={chat} alt="consultation" className={`service-img`} />
-              <div className={`text`}>
-                <div className="service-title">Consultation</div>
+              <img src={chat} alt="consultation" className="service-img" />
+              <div className="text">
+                <div className="service-title" id="consultation">
+                  Consultation
+                </div>
                 <p>
                   We always strongly recommend a consultation, This gives both
                   parties an opportunity to build a relationship from day one
@@ -171,10 +175,7 @@ const Services = () => {
                   working with you. All consultations are online we use Google
                   Meets.
                 </p>
-                <Button
-                  text="Contact us"
-                  link="/contact-us"
-                />
+                <Button text="Contact us" link="/contact-us" />
               </div>
             </div>
           </div>

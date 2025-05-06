@@ -15,19 +15,19 @@ const Home = () => {
   const { second, third, fourth } = scrollState();
   const services = [
     {
-      link: "1",
+      link: "chatbots",
       title: "CHAT ASSISTANTS",
       text: "Chat assistants integrated into your website. Automated workflow integrations",
       img: img1,
     },
     {
-      link: "2",
+      link: "automation",
       title: "AI AUTOMATION",
       text: "Automated workflows integrated into your website. Automated workflow integrations",
       img: img2,
     },
     {
-      link: "3",
+      link: "consultation",
       title: "CONSULTATION",
       text: "Virtual call with no time limit, based on your business. Objectives and planning",
       img: img3,
